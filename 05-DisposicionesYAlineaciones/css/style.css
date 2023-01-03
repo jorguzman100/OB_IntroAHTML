@@ -1,0 +1,42 @@
+/* Utiliza la disposición flex-box para crear una galería de 6 imágenes con los siguientes parámetros
+
+Las imágenes deben tener 300 píxeles de ancho
+
+Deben reagruparse (wrap) cuando el ancho del viewport cambia */
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#backgroundVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+
+.wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.wrapper img {
+    border-radius: 5%;
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
