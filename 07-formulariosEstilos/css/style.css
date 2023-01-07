@@ -1,0 +1,150 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container h1 {
+    margin: 0;
+}
+
+/* Social buttons */
+.socialSignUp {
+    display: flex;
+    gap: 15px;
+
+}
+
+.googleBtn {
+    display: flex;
+    align-items: center;
+    background: rgb(35, 118, 229);
+    color: white;
+    width: 250px;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.googleBtn p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.googleImg {
+    display: flex;
+    width: 25px;
+    padding: 7px;
+    align-self: center;
+    background-color: white;
+    border-radius: 3px 0 0 3px;
+}
+
+.twitterBtn {
+    background: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+    padding: 3px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.twitterImg {
+    color: rgb(110, 109, 122);
+}
+
+/* Separator */
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    display: flex;
+    flex-grow: 1;
+    border: none;
+    border-top: solid 1px lightgray;
+    align-items: center;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+
+/* The form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nameWrap {
+    display: flex;
+    gap: 20px;   
+}
+
+.nameWrap label {
+    width: 100%;
+}
+
+input {
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(159, 159, 168);
+}
+
+input:hover {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+input:focus {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+label[for=termsCheck] {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+input[type='checkbox'] {
+    border: 1px solid #dbdbde;
+}
+
+button[type=submit] {
+    background-color: rgb(232, 79, 138);
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 9px;
+    width: 40%;
+}

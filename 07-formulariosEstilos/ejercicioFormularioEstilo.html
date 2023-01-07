@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario con Estilo Moderno</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e211982880.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign up to Dribbble</h1>
+        <div class="socialSignUp">
+            <div class="googleBtn">
+                <picture>
+                    <img class="googleImg" src="media/googleLogo.png" alt="Google logo">
+                </picture>
+                <p>Sign up with Google</p>
+            </div>
+            <div class="twitterBtn">
+                <picture>
+                    <i class="fa-brands fa-twitter twitterImg"></i>
+                </picture>
+            </div>
+        </div>
+
+        <div class="separator">
+            <hr>
+            <span>Or</span>
+            <hr>
+        </div>
+
+        <form action="/" method="GET">
+            <div class="nameWrap">
+                <label for="name">Name
+                    <input type="text" id="name" name="name" />
+                </label>
+                <label for="userName">Username
+                    <input type="text" id="userName" name="userName"/>
+                </label>
+            </div>
+            <label for="email">Email
+                <input type="email" id="email" name="email"/>
+            </label>
+            <label for="pwd">Password
+                <input type="password" id="pwd" name="pwd" placeholder="6+ characters" />
+            </label>
+            <label for="termsCheck">
+                <input type="checkbox" id="termsCheck" name="termsCheckbox"/>
+                <span>I accept Terms and Conditions, Privacy Policy, and Notification Settings.</span>
+            </label>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+
+</html>
