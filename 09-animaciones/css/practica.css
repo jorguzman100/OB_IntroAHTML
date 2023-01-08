@@ -1,0 +1,40 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background: blue;
+}
+
+.hijo {
+    width: 30%;
+    height: 30%;
+    background: greenyellow;
+    /* transition: all 1s; */
+    animation: anima 1s infinite alternate;
+}
+
+.padre:hover .hijo {
+    animation-play-state: paused;
+}
+
+@keyframes anima {
+    0% {
+        transform: translateX(0%) translatey(0%);
+        background: greenyellow;
+    }
+    25% {
+        transform: translateX(234%) translatey(0%);
+        background: blue;
+    }
+    50% {
+        transform: translateX(234%) translatey(234%);
+        background: greenyellow;
+    }
+    75% {
+        transform: translateX(0%) translatey(234%);
+        background: blue;
+    }
+    100% {
+        transform: translateX(0%) translatey(0%);
+        background: greenyellow;
+    }
+}
