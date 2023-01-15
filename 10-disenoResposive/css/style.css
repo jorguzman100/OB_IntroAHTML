@@ -1,0 +1,51 @@
+/* (Tip: Utiliza la disposición flex donde la sección principal utilizará flex-grow) */
+
+:root {
+    --gray: rgba(100, 100, 100, 0.2);
+    --blue: rgba(0, 0, 255, 0.7);
+}
+
+.container {
+    display: flex;
+    background-color: var(--gray);
+    box-shadow: 5px 5px 3px  rgba(100, 100, 100, 0.5);
+}
+
+nav {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.item {
+    background-color: var(--blue);
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+main {
+    flex-grow: 3;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    min-height: 25vh;
+}
+
+
+/* Utiliza las media queries para que cuando el ancho del viewport sea menor de 640px ocurra lo siguiente:
+
+La barra lateral izquierda se muestre como una navegación en la parte inferior
+
+La disposición de los elementos de la barra lateral se vuelva horizontal
+
+(Tip: Trabaja con la propiedad flex-direction) */
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+}

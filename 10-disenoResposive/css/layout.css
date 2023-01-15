@@ -1,0 +1,87 @@
+/* https://css-tricks.com/animated-media-queries/ */
+/* https://www.webdesignerdepot.com/2013/06/how-to-animate-media-queries/ */
+
+header { grid-area: header; }
+nav { grid-area: menu; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main aside aside'
+    'menu footer footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+  transition: 2s;
+}
+
+.layout {
+  background-color: rgba(var(--bs-secondary-bg-rgb), .5);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+section {
+    display: grid;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header'
+          'menu'
+          'main'
+          'aside'
+          'footer';
+      }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header'
+          'menu'
+          'main'
+          'aside'
+          'footer';
+      }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main main main'
+          'menu aside aside aside aside aside'
+          'menu footer footer footer footer footer';
+      }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'menu main main main main aside'
+          'menu footer footer footer footer footer';
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media (min-width: 1200px) {...} */
+
+
